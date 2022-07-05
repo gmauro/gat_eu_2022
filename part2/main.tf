@@ -11,7 +11,7 @@ resource "openstack_compute_keypair_v2" "my-cloud-key" {
 resource "openstack_compute_instance_v2" "head" {
   name            = "central-manager"
   image_name      = "vggp-v40-j255-a33bb037f9fb-master"
-  flavor_name     = "c1.denbi_cloud_user_meeting"
+  flavor_name     = "c1.galaxy_eu_c2m8d12"
   key_pair        = openstack_compute_keypair_v2.my-cloud-key.name
   security_groups = ["default"]
   network {
