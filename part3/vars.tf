@@ -32,7 +32,7 @@ variable "public_network" {
 variable "private_network" {
   type = map(string)
   default = {
-    name        = "tf_eu_admin_training-private-private"
+    name        = "tf_eu_admin_training-private"
     subnet_name = "tf_eu_admin_training-private-subnet"
     cidr4       = "192.168.1.0/24"
   }
